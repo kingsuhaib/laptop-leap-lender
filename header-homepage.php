@@ -9,93 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://www.google.com" crossorigin />
-	
-	<!-- Tailwind CSS CDN -->
-	<script src="https://cdn.tailwindcss.com"></script>
-	<script>
-    tailwind.config = {
-      important: true, // Force all Tailwind utilities to be !important
-      darkMode: ["class"],
-      theme: {
-		container: {
-			center: true,
-			padding: "2rem",
-			screens: {
-				"2xl": "1400px",
-			},
-		},
-        extend: {
-		  fontFamily: {
-			sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
-		  },
-          colors: {
-            border: "hsl(var(--border))",
-            input: "hsl(var(--input))",
-            ring: "hsl(var(--ring))",
-            background: "hsl(var(--background))",
-            foreground: "hsl(var(--foreground))",
-            primary: {
-              DEFAULT: "hsl(var(--primary))",
-              foreground: "hsl(var(--primary-foreground))",
-            },
-            secondary: {
-              DEFAULT: "hsl(var(--secondary))",
-              foreground: "hsl(var(--secondary-foreground))",
-            },
-            destructive: {
-              DEFAULT: "hsl(var(--destructive))",
-              foreground: "hsl(var(--destructive-foreground))",
-            },
-            muted: {
-              DEFAULT: "hsl(var(--muted))",
-              foreground: "hsl(var(--muted-foreground))",
-            },
-            accent: {
-              DEFAULT: "hsl(var(--accent))",
-              foreground: "hsl(var(--accent-foreground))",
-            },
-            popover: {
-              DEFAULT: "hsl(var(--popover))",
-              foreground: "hsl(var(--popover-foreground))",
-            },
-            card: {
-              DEFAULT: "hsl(var(--card))",
-              foreground: "hsl(var(--card-foreground))",
-            },
-          },
-		  borderRadius: {
-			lg: "var(--radius)",
-			md: "calc(var(--radius) - 2px)",
-			sm: "calc(var(--radius) - 4px)",
-		  },
-		  keyframes: {
-			"accordion-down": {
-			  from: { height: "0" },
-			  to: { height: "var(--radix-accordion-content-height)" },
-			},
-			"accordion-up": {
-			  from: { height: "var(--radix-accordion-content-height)" },
-			  to: { height: "0" },
-			},
-			"float": {
-			  "0%, 100%": { transform: "translateY(0px)" },
-			  "50%": { transform: "translateY(-10px)" },
-			},
-			"glow": {
-			  "0%, 100%": { opacity: "0.5" },
-			  "50%": { opacity: "1" },
-			},
-		  },
-		  animation: {
-			"accordion-down": "accordion-down 0.2s ease-out",
-			"accordion-up": "accordion-up 0.2s ease-out",
-			"float": "float 3s ease-in-out infinite",
-			"glow": "glow 2s ease-in-out infinite",
-		  },
-        }
-      }
-    }
-  </script>
   <style type="text/tailwindcss">
     /* Global Overrides for Astra */
     @layer base {
@@ -226,8 +139,7 @@
 		<nav class="hidden lg:flex items-center gap-6">
 		<a href="<?php echo home_url(); ?>" class="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">Home</a>
 		<a href="<?php echo home_url('/shop/'); ?>" class="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">Laptops</a>
-		<a href="<?php echo home_url('/buying-guide'); ?>" class="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">Buying Guide</a>
-		<a href="<?php echo home_url('/faq'); ?>" class="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">FAQ</a>
+		<a href="<?php echo home_url('/product-category/accessories/'); ?>" class="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">Accessories</a>
 		<a href="<?php echo home_url('/contact'); ?>" class="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">Contact</a>
 		</nav>
 
@@ -235,13 +147,13 @@
 		<div class="flex items-center gap-2 md:gap-4">
 		<!-- Contact Info - Desktop -->
 		<a href="tel:+923101010001" class="hidden xl:flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm">
-			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-white"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
 			<span>0310-1010001</span>
 		</a>
 
 		<!-- Cart Icon -->
 		<a href="<?php echo wc_get_cart_url(); ?>" class="hidden md:flex items-center gap-1 text-muted-foreground hover:text-primary transition-colors">
-			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart text-white"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
 			<span class="text-xs">Cart</span>
 		</a>
 

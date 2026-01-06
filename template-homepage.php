@@ -608,7 +608,7 @@ get_header('homepage');
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <div class="group p-6 md:p-8 bg-card rounded-2xl border border-border hover:border-primary/30 transition-all duration-300 fade-up stagger-1">
               <div class="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center mb-5 group-hover:shadow-glow transition-shadow">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
               </div>
               <h3 class="text-lg font-semibold mb-2">Quality Guaranteed</h3>
               <p class="text-muted-foreground text-sm">Every laptop is thoroughly tested with 20-point inspection before sale</p>
@@ -616,7 +616,7 @@ get_header('homepage');
 
             <div class="group p-6 md:p-8 bg-card rounded-2xl border border-border hover:border-primary/30 transition-all duration-300 fade-up stagger-2">
               <div class="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center mb-5 group-hover:shadow-glow transition-shadow">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
               </div>
               <h3 class="text-lg font-semibold mb-2">Free Service Support</h3>
               <p class="text-muted-foreground text-sm">Get complimentary technical support and lifetime assistance after purchase</p>
@@ -624,7 +624,7 @@ get_header('homepage');
 
             <div class="group p-6 md:p-8 bg-card rounded-2xl border border-border hover:border-primary/30 transition-all duration-300 fade-up stagger-3">
               <div class="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center mb-5 group-hover:shadow-glow transition-shadow">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
               </div>
               <h3 class="text-lg font-semibold mb-2">9+ Years Experience</h3>
               <p class="text-muted-foreground text-sm">Trusted by thousands of customers across Pakistan since 2015</p>
@@ -632,7 +632,7 @@ get_header('homepage');
 
             <div class="group p-6 md:p-8 bg-card rounded-2xl border border-border hover:border-primary/30 transition-all duration-300 fade-up stagger-4">
               <div class="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center mb-5 group-hover:shadow-glow transition-shadow">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
               </div>
               <h3 class="text-lg font-semibold mb-2">Original Parts Only</h3>
               <p class="text-muted-foreground text-sm">We only use genuine replacement parts for all repairs and upgrades</p>
@@ -640,7 +640,7 @@ get_header('homepage');
 
             <div class="group p-6 md:p-8 bg-card rounded-2xl border border-border hover:border-primary/30 transition-all duration-300 fade-up stagger-1">
               <div class="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center mb-5 group-hover:shadow-glow transition-shadow">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
               </div>
               <h3 class="text-lg font-semibold mb-2">Expert Guidance</h3>
               <p class="text-muted-foreground text-sm">Our team helps you find the perfect laptop matching your budget and needs</p>
@@ -648,7 +648,7 @@ get_header('homepage');
 
             <div class="group p-6 md:p-8 bg-card rounded-2xl border border-border hover:border-primary/30 transition-all duration-300 fade-up stagger-2">
               <div class="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center mb-5 group-hover:shadow-glow transition-shadow">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
               </div>
               <h3 class="text-lg font-semibold mb-2">3 Days Easy Exchange</h3>
               <p class="text-muted-foreground text-sm">Not satisfied? Exchange your laptop within 3 days, no questions asked</p>
@@ -668,7 +668,9 @@ get_header('homepage');
             <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-400 w-5 h-5 fill-yellow-400" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-400 w-5 h-5 fill-yellow-400" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           </div>
-          <h2 class="text-3xl font-bold mb-2">Google Reviews</h2>
+          <a href="https://share.google/SuxsjOHC2841maV6a" target="_blank" rel="noopener noreferrer" class="inline-block hover:opacity-80 transition-opacity">
+            <h2 class="text-3xl font-bold mb-2">Google Reviews</h2>
+          </a>
           <p class="text-muted-foreground">Rated 4.9/5 by our valued customers</p>
         </div>
         <div class="grid md:grid-cols-3 gap-6">
@@ -711,7 +713,7 @@ get_header('homepage');
       <div class="container mx-auto px-4 text-center">
         <p class="text-sm text-muted-foreground uppercase tracking-widest mb-6">Secure Payment Methods</p>
         <div class="flex flex-wrap justify-center gap-6 opacity-70 grayscale hover:grayscale-0 transition-all">
-             <div class="px-4 py-2 border bg-white rounded shadow-sm font-bold">Cash on Delivery</div>
+             <div class="px-4 py-2 border bg-white rounded shadow-sm font-bold text-black">Cash on Delivery</div>
              <div class="px-4 py-2 border bg-white rounded shadow-sm font-bold text-blue-600">Bank Transfer</div>
              <div class="px-4 py-2 border bg-white rounded shadow-sm font-bold text-red-600">JazzCash</div>
              <div class="px-4 py-2 border bg-white rounded shadow-sm font-bold text-green-600">EasyPaisa</div>
