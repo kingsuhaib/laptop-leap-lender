@@ -215,7 +215,7 @@ get_header('homepage');
                 <div class="flex-1 text-center md:text-left">
                   <h3 class="font-semibold text-foreground text-sm md:text-base mb-1">Gaming Laptops</h3>
                   <p class="text-xs text-muted-foreground">Starting From</p>
-                  <p class="text-primary font-bold text-sm md:text-lg">38,999 PKR</p>
+                  <p class="text-primary font-bold text-sm md:text-lg">35,999 PKR</p>
                 </div>
                 <div class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 rounded-lg overflow-hidden">
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/media/cat-gaming-laptop-sm.jpg" alt="Gaming" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
@@ -228,7 +228,7 @@ get_header('homepage');
                 <div class="flex-1 text-center md:text-left">
                   <h3 class="font-semibold text-foreground text-sm md:text-base mb-1">2 in 1 Laptops</h3>
                   <p class="text-xs text-muted-foreground">Starting From</p>
-                  <p class="text-primary font-bold text-sm md:text-lg">19,999 PKR</p>
+                  <p class="text-primary font-bold text-sm md:text-lg">15,999 PKR</p>
                 </div>
                 <div class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 rounded-lg overflow-hidden">
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/media/cat-2in1-laptop-sm.jpg" alt="2 in 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
@@ -236,12 +236,12 @@ get_header('homepage');
               </div>
             </a>
             <!-- Business -->
-            <a href="https://pakistanbusiness.biz/product-category/laptops/" target="_blank" rel="noopener noreferrer" class="group relative rounded-2xl p-4 md:p-6 border bg-pink-900/30 border-pink-500/40 hover:border-pink-400 transition-all duration-300 hover:-translate-y-2">
+            <a href="https://pakistanbusiness.biz/product-category/business-laptops/" target="_blank" rel="noopener noreferrer" class="group relative rounded-2xl p-4 md:p-6 border bg-pink-900/30 border-pink-500/40 hover:border-pink-400 transition-all duration-300 hover:-translate-y-2">
               <div class="flex flex-col md:flex-row items-center gap-4">
                 <div class="flex-1 text-center md:text-left">
                   <h3 class="font-semibold text-foreground text-sm md:text-base mb-1">Business Laptops</h3>
                   <p class="text-xs text-muted-foreground">Starting From</p>
-                  <p class="text-primary font-bold text-sm md:text-lg">18,999 PKR</p>
+                  <p class="text-primary font-bold text-sm md:text-lg">20,999 PKR</p>
                 </div>
                 <div class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 rounded-lg overflow-hidden">
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/media/cat-business-laptop-sm.jpg" alt="Business" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
@@ -254,7 +254,7 @@ get_header('homepage');
                 <div class="flex-1 text-center md:text-left">
                   <h3 class="font-semibold text-foreground text-sm md:text-base mb-1">Personal Laptops</h3>
                   <p class="text-xs text-muted-foreground">Starting From</p>
-                  <p class="text-primary font-bold text-sm md:text-lg">6,999 PKR</p>
+                  <p class="text-primary font-bold text-sm md:text-lg">21,999 PKR</p>
                 </div>
                 <div class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 rounded-lg overflow-hidden">
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/media/cat-personal-laptop-sm.jpg" alt="Personal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
@@ -720,6 +720,75 @@ get_header('homepage');
         </div>
       </div>
     </section>
+
+    <!-- Latest News / Blog Section -->
+    <section class="py-12 md:py-16 bg-muted/20" id="blog">
+      <div class="container mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-primary text-sm font-medium uppercase tracking-wider">Latest Updates</span>
+          <h2 class="text-3xl md:text-4xl font-bold mt-4 mb-6">News & Insights</h2>
+          <p class="text-muted-foreground">Stay updated with the latest tech trends and extensive laptop guides.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 md:gap-8 py-5">
+            <?php
+            // Custom Query for Latest 3 Posts
+            $blog_args = array(
+                'post_type' => 'post',
+                'posts_per_page' => 3,
+                'post_status' => 'publish',
+            );
+            $blog_query = new WP_Query($blog_args);
+
+            if ($blog_query->have_posts()) :
+                while ($blog_query->have_posts()) : $blog_query->the_post();
+            ?>
+            <article class="group relative bg-card rounded-2xl overflow-hidden border border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
+                <a href="<?php the_permalink(); ?>" class="block relative aspect-[16/9] overflow-hidden bg-muted">
+                    <?php if (has_post_thumbnail()) : ?>
+                        <?php the_post_thumbnail('medium_large', array('class' => 'w-full h-full object-cover group-hover:scale-105 transition-transform duration-500')); ?>
+                    <?php else : ?>
+                        <!-- Fallback Icon if no image -->
+                        <div class="w-full h-full flex items-center justify-center text-muted-foreground bg-muted">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 opacity-20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                        </div>
+                    <?php endif; ?>
+                </a>
+                <div class="p-5 md:p-6 flex flex-col flex-1">
+                    <div class="flex items-center gap-3 text-xs text-muted-foreground mb-3">
+                        <span class="flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                            <?php echo get_the_date(); ?>
+                        </span>
+                        <span>•</span>
+                        <?php
+                            $categories = get_the_category();
+                            if ( ! empty( $categories ) ) {
+                                echo '<span class="text-primary font-medium">' . esc_html( $categories[0]->name ) . '</span>';
+                            }
+                        ?>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 line-clamp-2 group-hover:text-primary transition-colors">
+                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    </h3>
+                    <p class="text-muted-foreground text-sm line-clamp-3 mb-4 flex-1">
+                        <?php echo wp_trim_words(get_the_excerpt(), 15); ?>
+                    </p>
+                    <a href="<?php the_permalink(); ?>" class="inline-flex items-center text-sm font-medium text-primary hover:translate-x-1 transition-transform">
+                        Read More
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </article>
+            <?php
+                endwhile;
+                wp_reset_postdata();
+            endif;
+            ?>
+        </div>
+        
+        
+      </div>
 
     <!-- FAQ Section -->
     <section class="py-12 bg-background" id="faq">
